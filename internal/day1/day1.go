@@ -1,44 +1,13 @@
-package main
+package day1
 
 import (
-	"bufio"
-	"fmt"
 	"math"
-	"os"
 	"slices"
 	"strconv"
 	"strings"
 )
 
-func main() {
-	file, err := os.Open("cmd/day1/input.txt")
-	if err != nil {
-		panic(err)
-	}
-	defer file.Close()
-
-	var input []string
-
-	scanner := bufio.NewScanner(file)
-	for scanner.Scan() {
-		input = append(input, scanner.Text())
-	}
-
-	part1, err := partOne(input)
-	if err != nil {
-		panic(err)
-	}
-
-	part2, err := partTwo(input)
-	if err != nil {
-		panic(err)
-	}
-
-	fmt.Printf("Solution of part 1: %d\n", part1)
-	fmt.Printf("Solution of part 2: %d\n", part2)
-}
-
-func partOne(input []string) (int, error) {
+func PartOne(input []string) (int, error) {
 	first := make([]int, 0, len(input))
 	second := make([]int, 0, len(input))
 
@@ -64,7 +33,7 @@ func partOne(input []string) (int, error) {
 	return score, nil
 }
 
-func partTwo(input []string) (int, error) {
+func PartTwo(input []string) (int, error) {
 	first := make([]int, 0, len(input))
 	second := make([]int, 0, len(input))
 
