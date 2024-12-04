@@ -5,10 +5,13 @@ all: run
 run:
 	DAY=4 go run cmd/aocgo2024/main.go
 
-.SILENT: run
-.PHONY: run
 test:
 	go test ./...
 
-.SILENT: run test
-.PHONY: run test
+new:
+	mkdir internal/day
+	cp internal/template/template.go internal/day/day.go
+	cp internal/template/template_test.go internal/day/day_test.go
+
+.SILENT: run test new
+.PHONY: run test new
