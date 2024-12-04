@@ -7,3 +7,8 @@ run:
 
 .SILENT: run
 .PHONY: run
+test:
+	go test ./...
+
+.SILENT: run test
+.PHONY: run test
