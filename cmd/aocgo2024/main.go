@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"time"
 
 	"github.com/maeldonn/aoc-go-2024/internal/day1"
 	"github.com/maeldonn/aoc-go-2024/internal/day2"
@@ -58,15 +59,12 @@ func main() {
 	}
 
 	fmt.Printf("########## Day %d ##########\n", day)
-	part1, err := partOne(input)
-	if err != nil {
-		panic(err)
-	}
-	fmt.Printf("Solution of part 1: %d\n", part1)
 
-	part2, err := partTwo(input)
-	if err != nil {
-		panic(err)
-	}
-	fmt.Printf("Solution of part 2: %d\n", part2)
+	start1 := time.Now()
+	part1, _ := partOne(input)
+	fmt.Printf("Solution of part 1: %d (took %s)\n", part1, time.Since(start1))
+
+	start2 := time.Now()
+	part2, _ := partTwo(input)
+	fmt.Printf("Solution of part 2: %d (took %s)\n", part2, time.Since(start2))
 }
