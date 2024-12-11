@@ -1,10 +1,8 @@
 package day9
 
-import (
-	"strconv"
-)
+import "strconv"
 
-func PartOne(input []string) (int, error) {
+func PartOne(input []string) int {
 	var size int
 	for _, c := range input[0] {
 		n, _ := strconv.Atoi(string(c))
@@ -56,10 +54,10 @@ func PartOne(input []string) (int, error) {
 		checksum += i * n
 	}
 
-	return checksum, nil
+	return checksum
 }
 
-func PartTwo(input []string) (int, error) {
+func PartTwo(input []string) int {
 	var size int
 	for _, c := range input[0] {
 		n, _ := strconv.Atoi(string(c))
@@ -132,5 +130,5 @@ func PartTwo(input []string) (int, error) {
 		}
 	}
 
-	return checksum, nil
+	return checksum
 }

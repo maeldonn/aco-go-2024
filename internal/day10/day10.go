@@ -1,10 +1,8 @@
 package day10
 
-import (
-	"image"
-)
+import "image"
 
-func PartOne(input []string) (int, error) {
+func PartOne(input []string) int {
 	var scores int
 
 	directions := []image.Point{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
@@ -46,10 +44,10 @@ func PartOne(input []string) (int, error) {
 		}
 	}
 
-	return scores, nil
+	return scores
 }
 
-func PartTwo(input []string) (int, error) {
+func PartTwo(input []string) int {
 	var scores int
 	directions := []image.Point{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
 
@@ -86,5 +84,5 @@ func PartTwo(input []string) (int, error) {
 		}
 	}
 
-	return scores, nil
+	return scores
 }

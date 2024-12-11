@@ -19,13 +19,11 @@ var input = []string{
 }
 
 func TestPartOne(t *testing.T) {
-	got, err := PartOne(input)
-	assert.NoError(t, err)
+	got := PartOne(input)
 	assert.Equal(t, 3749, got)
 }
 
 func TestPartTwo(t *testing.T) {
-	got, err := PartTwo(input)
-	assert.NoError(t, err)
+	got := PartTwo(input)
 	assert.Equal(t, 11387, got)
 }

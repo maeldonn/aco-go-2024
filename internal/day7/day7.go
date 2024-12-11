@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func PartOne(input []string) (int, error) {
+func PartOne(input []string) int {
 	var totalCalibration int
 	for _, line := range input {
 		split := strings.Split(line, " ")
@@ -36,10 +36,10 @@ func PartOne(input []string) (int, error) {
 		}
 	}
 
-	return totalCalibration, nil
+	return totalCalibration
 }
 
-func PartTwo(input []string) (int, error) {
+func PartTwo(input []string) int {
 	var totalCalibration int
 	for _, line := range input {
 		split := strings.Split(line, " ")
@@ -69,7 +69,7 @@ func PartTwo(input []string) (int, error) {
 		}
 	}
 
-	return totalCalibration, nil
+	return totalCalibration
 }
 
 func eval(nums, combo []string) int {

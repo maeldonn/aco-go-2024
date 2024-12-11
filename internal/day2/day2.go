@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func PartOne(input []string) (int, error) {
+func PartOne(input []string) int {
 	var safeReports int
 	for _, line := range input {
 		numbers := strings.Split(line, " ")
@@ -15,10 +15,10 @@ func PartOne(input []string) (int, error) {
 		}
 	}
 
-	return safeReports, nil
+	return safeReports
 }
 
-func PartTwo(input []string) (int, error) {
+func PartTwo(input []string) int {
 	var safeReports int
 	for _, line := range input {
 		numbers := strings.Split(line, " ")
@@ -31,7 +31,7 @@ func PartTwo(input []string) (int, error) {
 		}
 	}
 
-	return safeReports, nil
+	return safeReports
 }
 
 func isSafe(numbers []string) bool {

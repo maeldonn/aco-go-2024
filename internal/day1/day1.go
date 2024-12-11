@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func PartOne(input []string) (int, error) {
+func PartOne(input []string) int {
 	first := make([]int, 0, len(input))
 	second := make([]int, 0, len(input))
 
@@ -30,10 +30,10 @@ func PartOne(input []string) (int, error) {
 		score += int(math.Abs(diff))
 	}
 
-	return score, nil
+	return score
 }
 
-func PartTwo(input []string) (int, error) {
+func PartTwo(input []string) int {
 	first := make([]int, 0, len(input))
 	second := make([]int, 0, len(input))
 
@@ -59,5 +59,5 @@ func PartTwo(input []string) (int, error) {
 		score += first[i] * freq[first[i]]
 	}
 
-	return score, nil
+	return score
 }

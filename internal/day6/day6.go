@@ -8,7 +8,7 @@ import (
 
 var directions = []image.Point{{0, -1}, {1, 0}, {0, 1}, {-1, 0}}
 
-func PartOne(input []string) (int, error) {
+func PartOne(input []string) int {
 	var curr image.Point
 	for y, line := range input {
 		for x, char := range line {
@@ -42,10 +42,10 @@ func PartOne(input []string) (int, error) {
 		curr = next
 	}
 
-	return len(seen), nil
+	return len(seen)
 }
 
-func PartTwo(input []string) (int, error) {
+func PartTwo(input []string) int {
 	var start image.Point
 	for j, line := range input {
 		for i, char := range line {
@@ -134,5 +134,5 @@ func PartTwo(input []string) (int, error) {
 	}
 
 	wg.Wait()
-	return total, nil
+	return total
 }

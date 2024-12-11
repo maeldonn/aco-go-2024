@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func PartOne(input []string) (int, error) {
+func PartOne(input []string) int {
 	var pageNumbers int
 
 	rules := make(map[string][]string)
@@ -40,10 +40,10 @@ func PartOne(input []string) (int, error) {
 		}
 	}
 
-	return pageNumbers, nil
+	return pageNumbers
 }
 
-func PartTwo(input []string) (int, error) {
+func PartTwo(input []string) int {
 	var pageNumbers int
 
 	rules := make(map[string][]string)
@@ -77,5 +77,5 @@ func PartTwo(input []string) (int, error) {
 		}
 	}
 
-	return pageNumbers, nil
+	return pageNumbers
 }

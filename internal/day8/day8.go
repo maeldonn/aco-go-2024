@@ -1,10 +1,8 @@
 package day8
 
-import (
-	"image"
-)
+import "image"
 
-func PartOne(input []string) (int, error) {
+func PartOne(input []string) int {
 	antennas := make(map[rune][]image.Point)
 	for y, line := range input {
 		for x, char := range line {
@@ -38,10 +36,10 @@ func PartOne(input []string) (int, error) {
 		}
 	}
 
-	return len(location), nil
+	return len(location)
 }
 
-func PartTwo(input []string) (int, error) {
+func PartTwo(input []string) int {
 	antennas := make(map[rune][]image.Point)
 	for y, line := range input {
 		for x, char := range line {
@@ -78,5 +76,5 @@ func PartTwo(input []string) (int, error) {
 		}
 	}
 
-	return len(location), nil
+	return len(location)
 }
