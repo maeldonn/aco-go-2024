@@ -2,7 +2,7 @@ package day9
 
 import "strconv"
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	var size int
 	for _, c := range input[0] {
 		n, _ := strconv.Atoi(string(c))
@@ -57,7 +57,7 @@ func PartOne(input []string) int {
 	return checksum
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	var size int
 	for _, c := range input[0] {
 		n, _ := strconv.Atoi(string(c))

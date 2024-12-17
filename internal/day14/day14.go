@@ -15,7 +15,7 @@ const (
 
 var re = regexp.MustCompile(`p=(\d+),(\d+) v=(-?\d+),(-?\d+)`)
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	var a, b, c, d int
 	for _, line := range input {
 		matches := re.FindStringSubmatch(line)
@@ -69,7 +69,7 @@ func (r *Robot) Move(seconds int) {
 	}
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 
 	robots := make([]Robot, 0, len(input))
 	for _, line := range input {

@@ -2,7 +2,7 @@ package day4
 
 import "image"
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	directions := []image.Point{{0, 1}, {1, 0}, {0, -1}, {-1, 0}, {1, 1}, {-1, 1}, {-1, -1}, {1, -1}}
 
 	var occurence int
@@ -31,7 +31,7 @@ func PartOne(input []string) int {
 	return occurence
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	var occurence int
 	for y, line := range input {
 		for x, char := range line {

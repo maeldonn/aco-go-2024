@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	var total int
 
 	var blink func(stone string, depth int)
@@ -38,7 +38,7 @@ func PartOne(input []string) int {
 	return total
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	cache := make(map[string]int)
 
 	var blink func(stone string, depth int) int

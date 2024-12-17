@@ -4,7 +4,7 @@ import "image"
 
 var directions = []image.Point{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	visited := make(map[image.Point]struct{})
 
 	var total int
@@ -60,7 +60,7 @@ func PartOne(input []string) int {
 	return total
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	visited := make(map[image.Point]struct{})
 
 	var total int

@@ -8,7 +8,7 @@ import (
 
 var directions = []image.Point{{0, -1}, {1, 0}, {0, 1}, {-1, 0}}
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	var curr image.Point
 	for y, line := range input {
 		for x, char := range line {
@@ -45,7 +45,7 @@ func PartOne(input []string) int {
 	return len(seen)
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	var start image.Point
 	for j, line := range input {
 		for i, char := range line {

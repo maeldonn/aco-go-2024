@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	var (
 		robot image.Point
 		boxes = make(map[image.Point]struct{})
@@ -78,7 +78,7 @@ func PartOne(input []string) int {
 	return sum
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	var (
 		robot image.Point
 		moves = make([]image.Point, 0)

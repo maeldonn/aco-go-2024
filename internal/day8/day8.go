@@ -2,7 +2,7 @@ package day8
 
 import "image"
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	antennas := make(map[rune][]image.Point)
 	for y, line := range input {
 		for x, char := range line {
@@ -39,7 +39,7 @@ func PartOne(input []string) int {
 	return len(location)
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	antennas := make(map[rune][]image.Point)
 	for y, line := range input {
 		for x, char := range line {

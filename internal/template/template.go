@@ -1,9 +1,9 @@
 package template
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	return 0
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	return 0
 }

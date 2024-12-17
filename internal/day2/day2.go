@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	var safeReports int
 	for _, line := range input {
 		numbers := strings.Split(line, " ")
@@ -18,7 +18,7 @@ func PartOne(input []string) int {
 	return safeReports
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	var safeReports int
 	for _, line := range input {
 		numbers := strings.Split(line, " ")

@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	var totalCalibration int
 	for _, line := range input {
 		split := strings.Split(line, " ")
@@ -39,7 +39,7 @@ func PartOne(input []string) int {
 	return totalCalibration
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	var totalCalibration int
 	for _, line := range input {
 		split := strings.Split(line, " ")

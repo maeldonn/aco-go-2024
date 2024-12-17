@@ -2,7 +2,7 @@ package day10
 
 import "image"
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	var scores int
 
 	directions := []image.Point{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
@@ -47,7 +47,7 @@ func PartOne(input []string) int {
 	return scores
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	var scores int
 	directions := []image.Point{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
 

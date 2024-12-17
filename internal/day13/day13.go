@@ -13,7 +13,7 @@ var (
 	rePrize  = regexp.MustCompile(`Prize: X\=(\d+), Y\=(\d+)`)
 )
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	var tokens int
 
 	for i := 0; i < len(input); i += 4 {
@@ -45,7 +45,7 @@ func PartOne(input []string) int {
 	return tokens
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	var tokens int
 
 	for i := 0; i < len(input); i += 4 {

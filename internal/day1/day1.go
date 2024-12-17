@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	first := make([]int, 0, len(input))
 	second := make([]int, 0, len(input))
 
@@ -33,7 +33,7 @@ func PartOne(input []string) int {
 	return score
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	first := make([]int, 0, len(input))
 	second := make([]int, 0, len(input))
 

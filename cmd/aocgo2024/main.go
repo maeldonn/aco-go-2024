@@ -13,6 +13,7 @@ import (
 	"github.com/maeldonn/aoc-go-2024/internal/day13"
 	"github.com/maeldonn/aoc-go-2024/internal/day14"
 	"github.com/maeldonn/aoc-go-2024/internal/day15"
+	"github.com/maeldonn/aoc-go-2024/internal/day17"
 	"github.com/maeldonn/aoc-go-2024/internal/day2"
 	"github.com/maeldonn/aoc-go-2024/internal/day3"
 	"github.com/maeldonn/aoc-go-2024/internal/day4"
@@ -45,7 +46,7 @@ func main() {
 		panic(err)
 	}
 
-	var partOne, partTwo func([]string) int
+	var partOne, partTwo func([]string) any
 	switch day {
 	case 1:
 		partOne = day1.PartOne
@@ -92,6 +93,9 @@ func main() {
 	case 15:
 		partOne = day15.PartOne
 		partTwo = day15.PartTwo
+	case 17:
+		partOne = day17.PartOne
+		partTwo = day17.PartTwo
 	}
 
 	fmt.Printf("########## Day %d ##########\n", day)

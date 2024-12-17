@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-func PartOne(input []string) int {
+func PartOne(input []string) any {
 	text := strings.Join(input, "")
 
 	re := regexp.MustCompile(`mul\((\d+),(\d+)\)`)
@@ -22,7 +22,7 @@ func PartOne(input []string) int {
 	return sum
 }
 
-func PartTwo(input []string) int {
+func PartTwo(input []string) any {
 	text := strings.Join(input, "")
 
 	re := regexp.MustCompile(`don't\(\).*?do\(\)`)
