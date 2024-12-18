@@ -3,7 +3,7 @@ export AOC_COOKIE=
 all: run
 
 run:
-	DAY=17 go run cmd/aocgo2024/main.go
+	DAY=18 go run cmd/aocgo2024/main.go
 
 test:
 	go test ./...

@@ -14,6 +14,7 @@ import (
 	"github.com/maeldonn/aoc-go-2024/internal/day14"
 	"github.com/maeldonn/aoc-go-2024/internal/day15"
 	"github.com/maeldonn/aoc-go-2024/internal/day17"
+	"github.com/maeldonn/aoc-go-2024/internal/day18"
 	"github.com/maeldonn/aoc-go-2024/internal/day2"
 	"github.com/maeldonn/aoc-go-2024/internal/day3"
 	"github.com/maeldonn/aoc-go-2024/internal/day4"
@@ -96,15 +97,18 @@ func main() {
 	case 17:
 		partOne = day17.PartOne
 		partTwo = day17.PartTwo
+	case 18:
+		partOne = day18.PartOne
+		partTwo = day18.PartTwo
 	}
 
 	fmt.Printf("########## Day %d ##########\n", day)
 
 	start1 := time.Now()
 	part1 := partOne(input)
-	fmt.Printf("Solution of part 1: %d (took %s)\n", part1, time.Since(start1))
+	fmt.Printf("Solution of part 1: %v (took %s)\n", part1, time.Since(start1))
 
 	start2 := time.Now()
 	part2 := partTwo(input)
-	fmt.Printf("Solution of part 2: %d (took %s)\n", part2, time.Since(start2))
+	fmt.Printf("Solution of part 2: %v (took %s)\n", part2, time.Since(start2))
 }
