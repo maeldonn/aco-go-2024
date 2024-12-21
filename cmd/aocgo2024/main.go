@@ -18,6 +18,7 @@ import (
 	"github.com/maeldonn/aoc-go-2024/internal/day19"
 	"github.com/maeldonn/aoc-go-2024/internal/day2"
 	"github.com/maeldonn/aoc-go-2024/internal/day20"
+	"github.com/maeldonn/aoc-go-2024/internal/day21"
 	"github.com/maeldonn/aoc-go-2024/internal/day3"
 	"github.com/maeldonn/aoc-go-2024/internal/day4"
 	"github.com/maeldonn/aoc-go-2024/internal/day5"
@@ -108,6 +109,9 @@ func main() {
 	case 20:
 		partOne = day20.PartOne
 		partTwo = day20.PartTwo
+	case 21:
+		partOne = day21.PartOne
+		partTwo = day21.PartTwo
 	}
 
 	fmt.Printf("########## Day %d ##########\n", day)
